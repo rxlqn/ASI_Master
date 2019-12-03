@@ -6,3 +6,12 @@
 
 发生冲突：$ git pull --rebase origin master
 https://juejin.im/post/5d3685146fb9a07ed064f11b
+
+
+查看历史版本
+git log
+回滚
+soft 只修改云端
+hard 修改本地目录
+git reset --hard HEAD^ 回滚上个版本
+git reset --hard xxx       回滚指定版本
