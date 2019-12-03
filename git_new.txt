@@ -27,3 +27,9 @@ git diff HEAD -- readme.txt
 Creating a new branch is quick
 1、git checkout -b dev  创建并切换
 2、git branch 查看当前分支
+3、git switch master 切换回master分支
+4、git branch <name> 创建分支
+5、git merge<name> 合并某分支到当前分支
+6、git branch -d <name> 删除分支
+
+先切换回master 再合并分支
