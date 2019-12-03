@@ -15,3 +15,15 @@ soft 只修改云端
 hard 修改本地目录
 git reset --hard HEAD^ 回滚上个版本
 git reset --hard xxx       回滚指定版本
+
+git diff HEAD -- readme.txt
+查看工作区和版本库最新版本区别
+
+1、改乱工作区，丢弃工作区修改   git checkout -- file
+2、改乱工作区，并add到暂存区 先执行 git reset HEAD <file> 再执行1
+3、已经commit后只能进行版本回退  git reset --hard HEAD^
+
+
+Creating a new branch is quick
+1、git checkout -b dev  创建并切换
+2、git branch 查看当前分支
