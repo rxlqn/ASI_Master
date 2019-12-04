@@ -29,7 +29,14 @@ Creating a new branch is quick
 2、git branch 查看当前分支
 3、git switch master 切换回master分支
 4、git branch <name> 创建分支
-5、git merge<name> 合并某分支到当前分支
+5、git merge --no-ff <name> 合并某分支到当前分支
 6、git branch -d <name> 删除分支
 
-先切换回master 再合并分支
+先切换回master 再合并分支,需要禁用fast forward 否则看不到分支历史
+git log --graph 图形界面查看分支历史
+
+分支策略
+实际开发中，master分支应十分稳定，平时不可在上面干活
+在dev分支干活，等到发布1.0再合并到master上
+多人合作时创建自己的分支，时不时往dev上合并
+
