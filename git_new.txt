@@ -1,7 +1,7 @@
 1、git init 把本地文件夹变成Git仓库
 2、git add . 添加新的文件
 3、git commit -m "注释内容" 提交
-4、git remoter add origin "ssh"  本地仓库和远程仓库进行关联
+4、git remote add origin "ssh"  本地仓库和远程仓库进行关联
 5、git push -u origin master 推送至github
 
 发生冲突：$ git pull --rebase origin master
